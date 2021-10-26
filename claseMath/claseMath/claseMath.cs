@@ -30,13 +30,10 @@ namespace claseMath
         public double Div (int a, int b)
         {
             if (b == 0)
-                throw new DivideByZeroException();
+                throw new ArgumentException();
             return a / b;
         }
 
-        private Exception Exception(DivideByZeroException divideByZeroException)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

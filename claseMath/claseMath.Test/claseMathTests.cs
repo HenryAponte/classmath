@@ -65,6 +65,14 @@ namespace claseMath.Test
             Assert.That(result + 6, Is.EqualTo(valoresperado));
             //Assert.AreEqual(result, 4);
         }
+        [Test]
+        public void Div_Divisor_Cero()
+        {
+            
+            Assert.That(() => _math.Div(1,0), Throws.ArgumentException);
+
+
+        }
 
     }
 }
